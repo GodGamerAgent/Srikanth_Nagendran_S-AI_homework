@@ -1,0 +1,17 @@
+Question Title: Advanced File Management
+Question Link: https://my.newtonschool.co/playground/code/4ks5o139cfoh?lecture_hash=v210chxjexei
+Solution:
+    mkdir project-files
+    cd project-files
+    touch report.docx summary.docx draft.docx
+    cp report.docx ./report_backup.docx
+    mkdir old
+    mv draft.docx old/
+    mv summary.docx final_summary.docx
+    cp final_summary.docx old/
+    rm report_backup.docx
+
+Approach:
+    1. The Question was straight forward. I just did what the steps to follow in the Question said
+
+Result: All the files were organized in the correct order
