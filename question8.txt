@@ -1,0 +1,18 @@
+Question Title: API-Service Directory Workflow
+Question Link: https://my.newtonschool.co/playground/code/5ypni48t3pzs
+Solution:
+    cd api-service
+    git init
+    git add README.md
+    git commit -m "Add documentation"
+    git add server.js routes.js package.json
+    git commit -m "Add server files"
+    echo "draft.md" >> .gitignore
+    echo ".env" >> .gitignore
+    git status
+    git log
+
+Approach:
+    1. The Question was straight forward. I just did what the steps to follow in the Question said to do
+
+Result: I made all the required commits to complete the question and the question got accepted
