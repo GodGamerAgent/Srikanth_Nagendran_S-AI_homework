@@ -1,0 +1,19 @@
+Question Title: Simplify the Compilation Process
+Question Link: https://my.newtonschool.co/playground/code/9kh4giios2j4?lecture_hash=t5qc0u6ap8tg
+Solution:
+    cat << 'EOF' > build.sh
+    #!/usr/bin/env bash
+    gcc hello.c -o hello
+    EOF
+    chmod +x build.sh
+    chmod +x hello
+    ./build.sh
+    ./hello
+
+Approach:
+    1. I used Herodoc and Shebang line to do this code I got the bash executable path by using which command
+    2. I used gcc compiler to compile the hello.c file
+    3. I gave the build.sh and hello file the executable permissions
+    4. I executed both the build.sh and hello file
+
+Result: The build.sh used gcc to compile hello file then the hello file got executed
