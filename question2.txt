@@ -1,0 +1,24 @@
+Question Title: Create a Project Folder Structure
+Question Link: https://my.newtonschool.co/playground/code/jipp2htnvrww?lecture_hash=v210chxjexei
+Solution:
+    cat > create-service << 'EOF'
+    #!/bin/bash
+
+    mkdir -p service/controllers
+    mkdir -p service/models
+    mkdir -p service/routes
+    mkdir -p service/middleware
+
+    echo "API Service" > service/README.md
+    echo 'console.log("Server started");' > service/server.js
+    EOF
+
+    chmod +x create-service
+    ./create-service
+
+Approach:
+    1. First I cat the create-service file and saw the things that need to be changed
+    2. As the file was small I used Herodoc to rewrite the file but this time I fixed all the code in the file as per the questions requirement
+    3. Then I make the create-service executable and then ran the file
+
+Result: I create the folder Structure by fixing the broken bash file
