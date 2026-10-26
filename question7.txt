@@ -1,0 +1,11 @@
+Question Title: The Missing Project Credentials
+Question Link: https://my.newtonschool.co/playground/code/7x83ezx6nimm
+Solution:
+    grep -r "DB_PASSWORD" .
+    cat EventApp/config/.env > EventApp/db_password.txt
+
+Approach:
+    1. I used grep command with recursive mode to search the entire current working directory for the word "DB_PASSWORD"
+    2. using this I found the file and as it was dynamically changing I used cat and stdout redirector to send it to the desired output file
+
+Result: Found the file containing the db_password and recovered it
