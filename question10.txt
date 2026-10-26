@@ -1,0 +1,20 @@
+Question Title: The Internship Project Setup
+Question Link: https://my.newtonschool.co/playground/code/5i36axzh7cl2?lecture_hash=mi7y4g3am46y
+Solution:
+    cd client-app
+    git init
+    ls -la
+    echo 'hello' >> index.html
+    echo 'hello' >> app.js
+    git add index.html app.js
+    git commit -m "Initial client files"
+    git remote add origin https://github.com/startup/client-app.git
+    git push -u origin main
+    git log
+
+Approach:
+    1. I first initialized git inside the folder and add some text to both the files and staged it and commited it.
+    2. I added github remote repo with a alias origin
+    3. I pushed the repo from local to github and also set an upstream and used git log to see the changes
+
+Result: I completed the question and the solution got accepted
